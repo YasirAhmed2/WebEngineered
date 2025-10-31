@@ -7,9 +7,9 @@ import prescriptionRouter from "./routers/prescriptionRouter.js";
 const app = express();
 app.use(express.json());
 app.use("/patient", patientRouter);
-app.use("/doctor", doctorRouter);
-app.use("/appointment", appointmentRouter);
-app.use("/prescription",prescriptionRouter);
+// app.use("/doctor", doctorRouter);
+// app.use("/appointment", appointmentRouter);
+// app.use("/prescription",prescriptionRouter);
 app.get("/", (req,res)=>{
     res.send("Welcome to Hospital Appointment System API");
 });
