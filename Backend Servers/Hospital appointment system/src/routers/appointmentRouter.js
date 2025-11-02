@@ -4,7 +4,7 @@ import {
     getAppointmentByID,
     addAppointment, 
     updateAppointment,
-    deleteAppontment
+    deleteAppointment
 } from "../controllers/appointmentController.js";
 const appointmentRouter=express.Router();
 
@@ -12,5 +12,5 @@ appointmentRouter.get("/",getAllAppointments);
 appointmentRouter.get("/:id",getAppointmentByID);
 appointmentRouter.post("/",addAppointment);
 appointmentRouter.put("/:id",updateAppointment);
-appointmentRouter.delete("/:id",deleteAppontment);  
+appointmentRouter.delete("/:id",deleteAppointment);  
 export default appointmentRouter;

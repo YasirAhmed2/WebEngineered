@@ -1,4 +1,4 @@
-import { prescription } from "../data/data";
+import { prescription } from "../data/data.js";
 export const getAllPrescriptions=(req,res)=>{
     res.send(prescription);
 }

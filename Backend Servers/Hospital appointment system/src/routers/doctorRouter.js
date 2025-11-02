@@ -1,6 +1,6 @@
 import express from "express";
 import{
-    getAlldoctors,
+    getAllDoctors,
     getDoctorByID,
     addDoctor,
     updateDoctor,
@@ -8,7 +8,7 @@ import{
 } from "../controllers/doctorController.js";
 
 const doctorRouter=express.Router();
-doctorRouter.get("/",getAlldoctors);
+doctorRouter.get("/",getAllDoctors);
 doctorRouter.get("/:id",getDoctorByID);
 doctorRouter.post("/",addDoctor);
 doctorRouter.put("/:id",updateDoctor);

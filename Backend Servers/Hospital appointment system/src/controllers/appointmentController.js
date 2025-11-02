@@ -1,4 +1,4 @@
-import { appointment } from "../data/data";
+import { appointment } from "../data/data.js";
 export const getAllAppointments=(req,res)=>{
     res.send(appointment);
 }
